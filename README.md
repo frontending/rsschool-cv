@@ -1,1 +1,1 @@
-# rsschool-cv
+https://frontending.github.io/rsschool-cv/
