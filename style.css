@@ -18,11 +18,11 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+h3 {
     font-size: 28px;
 }
 
-h3 {
+h2 {
     font-size: 22px;
     font-weight: bold;
     line-height: 40px;
@@ -290,7 +290,7 @@ footer {
         font-size: 30px; 
     }
 
-    h2 {
+    h3 {
         font-size: 22px;
     }
 
@@ -352,11 +352,11 @@ footer {
         font-size: 26px;
     }
 
-    h2 {
+    h3 {
         font-size: 16px;
     }
 
-    h3 {
+    h2 {
         font-size: 20px;
     }
 
@@ -400,6 +400,10 @@ footer {
     .samples1, .samples2 {
         flex-direction: column;
         width: unset;
+    }
+
+    .samples2Correct {
+        margin-left: -34px;
     }
 
     .sample1, .sample2 {
