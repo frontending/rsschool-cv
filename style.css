@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: rgb(233, 233, 233);
+}
+
+ol {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Georgia", normal, sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+.emphasis {
+    color: rgb(255, 60, 60);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(back.jpg);
+}
+
+header {
+    position: fixed;
+    width: 1600px;
+    height: 50px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(255, 130, 130);
+}
+
+.navMenu {
+    text-decoration: none;
+    color:inherit;
+}
+
+.navMenu:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1600px;
+    margin-top: 50px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 1600px;
+    background-color: rgb(20, 20, 20);
+}
+
+.aboutLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    min-width: 1130px;
+    margin: 10px 50px 10px 20px;
+}
+
+.fotoModule {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto {
+    width: 340px;
+}
+
+.objModule {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+
+.abourRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 60px 50px 60px 0;
+
+}
+
+.videocv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1600px;
+    margin: 2px 0;
+    background-color: rgb(100, 100, 100);
+}
+
+.vidos {
+    width: 560px;
+    height: 315px;
+    margin: 10px;
+    border: 0px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 1600px;
+    background-color: rgb(20, 20, 20);
+}
+
+.skillsLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 1120px;
+    margin: 10px 50px 10px 30px;
+}
+
+.skillsLeftSkills, .skillsLeftEng {
+    max-width: 450px;
+}
+
+.skillsText {
+    margin-top: 10px;
+}
+
+.skillsRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.samples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1600px;
+    margin: 2px 0;
+    background-color: rgb(100, 100, 100);
+}
+
+.samples1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    margin: 10px 0;
+}
+
+.samples1Pic {
+    display: flex;
+    flex-direction: column;
+}
+
+.samples1Link {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.sample1 {
+    height: 300px;
+    margin-right: 30px;
+}
+
+.descriptions {
+    margin-top: 50px;
+}
+
+.samples2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    margin: 10px 0;
+}
+
+.samples2Pic {
+    display: flex;
+    flex-direction: column;
+}
+
+.samples2Link {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.sample2 {
+    height: 300px;
+    margin-right: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 1600px;
+    height: 100px;
+    background-color: rgb(20, 20, 20);
+}
+
+.logoRS {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.logo {
+    width: 150px;
+}
+
+@media screen and (max-width: 1620px) {
+    header, main, .about, .videocv, .skills, .samples, footer {
+        width: 1200px;
+    }
+
+    .aboutLeft {
+        min-width: 800px;
+        margin: 10px 20px;
+    }
+
+    .skillsLeft {
+        margin: 10px 30px;
+    }
+
+    .samples1Pic {
+        margin-left: 10px;
+    }
+
+    .sample1, .sample2 {
+        width: 380px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    header, main, .about, .videocv, .skills, .samples, footer {
+        width: 640px;
+    }
+
+    h1 {
+        font-size: 30px; 
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .aboutLeft {
+        min-width: unset;
+        margin: 10px 20px;
+    }
+
+    .for640 {
+        margin-top: 20px;
+    }
+
+    .foto {
+        width: 290px;
+        margin-right: 30px;
+    }
+
+    .abourRight {
+        margin: 10px 30px 30px 20px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skillsLeft {
+        width: unset;
+        margin: 20px;
+    }
+
+    .skillsLeftSkills, .skillsLeftEng {
+        max-width: 270px;
+    }
+
+    .samples {
+        flex-direction: column;
+    }
+
+    .sample1, .sample2 {
+        height: 250px;
+        margin-right: unset;
+    }
+
+    .logoRS {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    header, main, .about, .videocv, .skills, .samples, footer {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .aboutLeft {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    .foto {
+        width: 260px;
+        margin: 0;
+    }
+
+    .objModule {
+        margin: 20px 0px;
+    }
+
+    .vidos {
+        width: 280px;
+        height: 157px;
+    }
+
+    .skillsLeft {
+        flex-direction: column;
+    }
+
+    .skillsRight {
+        margin: 0;
+        zoom: 0.8;
+    }
+
+    .samples1Pic, .samples2Pic, .sample1, .sample2, .samples1Link, .samples2Link {
+        margin: 0;
+        max-width: 280px;
+    }
+
+    .samples1, .samples2 {
+        flex-direction: column;
+        width: unset;
+    }
+
+    .samples2Correct {
+        margin-left: -34px;
+    }
+
+    .sample1, .sample2 {
+        height: 200px;
+    }
+
+    .descriptions {
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column; 
+        height: 150px;
+    }
+
+    .logoRS {
+        width: 250px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
